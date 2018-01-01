@@ -1,8 +1,8 @@
 const Alexa = require('alexa-sdk')
 const PubNub = require('pubnub')
 const pubnub = new PubNub({
-	publishKey : '',
-	subscribeKey : ''
+	publishKey : process.env.PUBNUB_PUBLISH_KEY,
+	subscribeKey : process.env.PUBNUB_SUBSCRIBE_KEY,
 })
 
 const APP_ID = undefined
