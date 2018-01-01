@@ -19,7 +19,12 @@
 				"turn on TV",
 				"turn on the TV",
 				"turn the TV on",
-				"turn on TV"
+				"turn on TV",
+				"TV off",
+				"turn off TV",
+				"turn off the TV",
+				"turn the TV off",
+				"turn off TV"
 			],
 			"slots": []
 		}
