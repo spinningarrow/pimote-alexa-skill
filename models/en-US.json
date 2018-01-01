@@ -30,6 +30,28 @@
 						"turn off TV"
 					],
 					"slots": []
+				},
+				{
+					"name": "TurnOnReceiverIntent",
+					"samples": [
+						"receiver on",
+						"turn on receiver",
+						"turn on the receiver",
+						"turn the receiver on",
+						"turn on receiver"
+					],
+					"slots": []
+				},
+				{
+					"name": "TurnOffReceiverIntent",
+					"samples": [
+						"receiver off",
+						"turn off receiver",
+						"turn off the receiver",
+						"turn the receiver off",
+						"turn off receiver"
+					],
+					"slots": []
 				}
 			]
 		}
