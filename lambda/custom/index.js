@@ -34,7 +34,7 @@ const handlers = {
 		}, (status, response) => {
 			console.log('PUBNUB', status, response)
 
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify(response))
+			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
 			this.response.speak('OK')
 			this.emit(':responseReady')
 		})
@@ -50,7 +50,7 @@ const handlers = {
 		}, (status, response) => {
 			console.log('PUBNUB', status, response)
 
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify(response))
+			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
 			this.response.speak('OK')
 			this.emit(':responseReady')
 		})
@@ -66,7 +66,7 @@ const handlers = {
 		}, (status, response) => {
 			console.log('PUBNUB', status, response)
 
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify(response))
+			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
 			this.response.speak('OK')
 			this.emit(':responseReady')
 		})
