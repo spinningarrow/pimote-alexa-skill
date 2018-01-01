@@ -1,0 +1,18 @@
+{
+  "name": "pimote-alexa-skill-lambda",
+  "version": "1.0.0",
+  "description": "Lambda function for pimote-alexa-skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "pimote"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.12",
+    "pubnub": "^4.19.0"
+  }
+}

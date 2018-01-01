@@ -1,0 +1,27 @@
+{
+	"intents": [
+		{
+			"name": "AMAZON.CancelIntent",
+			"samples": []
+		},
+		{
+			"name": "AMAZON.HelpIntent",
+			"samples": []
+		},
+		{
+			"name": "AMAZON.StopIntent",
+			"samples": []
+		},
+		{
+			"name": "TurnOnTVIntent",
+			"samples": [
+				"TV on",
+				"turn on TV",
+				"turn on the TV",
+				"turn the TV on",
+				"turn on TV"
+			],
+			"slots": []
+		}
+	]
+}
