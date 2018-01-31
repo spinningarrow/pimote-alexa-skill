@@ -54,6 +54,8 @@ const pimoteIntents = [
 	'TV_ok',
 	'receiver_powerOff',
 	'receiver_powerOn',
+	'receiver_tuner',
+	'receiver_cd',
 ]
 
 const pimoteHandler = (alexaHandler, intent) => {

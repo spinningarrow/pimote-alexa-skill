@@ -32,6 +32,15 @@
 					"slots": []
 				},
 				{
+					"name": "TV_ok",
+					"samples": [
+						"TV OK",
+						"press OK",
+						"press OK on TV"
+					],
+					"slots": []
+				},
+				{
 					"name": "receiver_powerOn",
 					"samples": [
 						"receiver on",
@@ -54,11 +63,22 @@
 					"slots": []
 				},
 				{
-					"name": "TV_ok",
+					"name": "receiver_tuner",
 					"samples": [
-						"TV OK",
-						"press OK",
-						"press OK on TV"
+						"receiver tuner",
+						"press tuner",
+						"press tuner on the receiver",
+						"switch audio to yourself"
+					],
+					"slots": []
+				},
+				{
+					"name": "receiver_cd",
+					"samples": [
+						"receiver CD",
+						"press CD",
+						"press CD on the receiver",
+						"switch audio to TV"
 					],
 					"slots": []
 				}
