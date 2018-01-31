@@ -90,3 +90,29 @@ const handlers = {
 		this.emit(':responseReady')
 	},
 }
+
+const pimoteIntents = [
+	'TV_ok',
+]
+
+const pimoteHandler = (alexaHandler, intent) => {
+	const [device, action] = intent.split('_')
+
+	pubnub.publish({
+		channel: 'hello_world',
+		message: {
+			device: device,
+			action: action,
+		}
+	}, (status, response) => {
+		alexaHandler.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
+		alexaHandler.response.speak('OK')
+		alexaHandler.emit(':responseReady')
+	})
+}
+
+pimoteIntents.forEach(intent => {
+	handlers[intent] = function () {
+		pimoteHandler(this, intent)
+	}
+})

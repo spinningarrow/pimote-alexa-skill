@@ -52,6 +52,15 @@
 						"turn off receiver"
 					],
 					"slots": []
+				},
+				{
+					"name": "TV_ok",
+					"samples": [
+						"TV OK",
+						"press OK",
+						"press OK on TV"
+					],
+					"slots": []
 				}
 			]
 		}
