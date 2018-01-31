@@ -16,7 +16,7 @@
 					"samples": []
 				},
 				{
-					"name": "TurnOnTVIntent",
+					"name": "TV_power",
 					"samples": [
 						"TV on",
 						"turn on TV",
@@ -32,7 +32,7 @@
 					"slots": []
 				},
 				{
-					"name": "TurnOnReceiverIntent",
+					"name": "receiver_powerOn",
 					"samples": [
 						"receiver on",
 						"turn on receiver",
@@ -43,7 +43,7 @@
 					"slots": []
 				},
 				{
-					"name": "TurnOffReceiverIntent",
+					"name": "receiver_powerOff",
 					"samples": [
 						"receiver off",
 						"turn off receiver",

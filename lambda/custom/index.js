@@ -91,8 +91,17 @@ const handlers = {
 	},
 }
 
+const kebabify = camelCasedInput =>
+	camelCasedInput
+		.split(/(?=[A-Z])/)
+		.map(word => word.toLowerCase())
+		.join('-')
+
 const pimoteIntents = [
+	'TV_power',
 	'TV_ok',
+	'receiver_powerOff',
+	'receiver_powerOn',
 ]
 
 const pimoteHandler = (alexaHandler, intent) => {
@@ -102,7 +111,7 @@ const pimoteHandler = (alexaHandler, intent) => {
 		channel: 'hello_world',
 		message: {
 			device: device,
-			action: action,
+			action: kebabify(action),
 		}
 	}, (status, response) => {
 		alexaHandler.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
