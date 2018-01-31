@@ -24,54 +24,6 @@ const handlers = {
 		this.emit('TurnOnTVIntent')
 	},
 
-	'TurnOnTVIntent': function () {
-		pubnub.publish({
-			channel: 'hello_world',
-			message: {
-				device: 'TV',
-				action: 'power',
-			}
-		}, (status, response) => {
-			console.log('PUBNUB', status, response)
-
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
-			this.response.speak('OK')
-			this.emit(':responseReady')
-		})
-	},
-
-	'TurnOnReceiverIntent': function () {
-		pubnub.publish({
-			channel: 'hello_world',
-			message: {
-				device: 'receiver',
-				action: 'power-on',
-			}
-		}, (status, response) => {
-			console.log('PUBNUB', status, response)
-
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
-			this.response.speak('OK')
-			this.emit(':responseReady')
-		})
-	},
-
-	'TurnOffReceiverIntent': function () {
-		pubnub.publish({
-			channel: 'hello_world',
-			message: {
-				device: 'receiver',
-				action: 'power-off',
-			}
-		}, (status, response) => {
-			console.log('PUBNUB', status, response)
-
-			this.response.cardRenderer(SKILL_NAME, JSON.stringify({ status, response }))
-			this.response.speak('OK')
-			this.emit(':responseReady')
-		})
-	},
-
 	'AMAZON.HelpIntent': function () {
 		const speechOutput = HELP_MESSAGE
 		const reprompt = HELP_REPROMPT
