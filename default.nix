@@ -4,6 +4,6 @@ in pkgs.stdenv.mkDerivation rec {
   name = "pimote-alexa-skill";
 
   buildInputs = with pkgs; [
-    nodejs-9_x
+    nodejs-6_x
   ];
 }

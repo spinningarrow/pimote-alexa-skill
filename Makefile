@@ -1,4 +1,6 @@
+export PATH := node_modules/.bin:$(PATH)
+
 .PHONY: deploy
 
 deploy:
-	npx -p ask-cli ask deploy
+	ask deploy
