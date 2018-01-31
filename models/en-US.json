@@ -82,6 +82,24 @@
 						"switch audio to TV"
 					],
 					"slots": []
+				},
+				{
+					"name": "receiver_volumeUp",
+					"samples": [
+						"be louder",
+						"increase volume",
+						"volume up"
+					],
+					"slots": []
+				},
+				{
+					"name": "receiver_volumeDown",
+					"samples": [
+						"be quieter",
+						"decrease volume",
+						"volume down"
+					],
+					"slots": []
 				}
 			]
 		}
