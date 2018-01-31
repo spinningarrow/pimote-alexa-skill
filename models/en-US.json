@@ -36,7 +36,8 @@
 					"samples": [
 						"TV OK",
 						"press OK",
-						"press OK on TV"
+						"press OK on TV",
+						"maximize TV screen"
 					],
 					"slots": []
 				},
