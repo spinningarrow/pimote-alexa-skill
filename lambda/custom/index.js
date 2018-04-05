@@ -52,6 +52,8 @@ const kebabify = camelCasedInput =>
 const pimoteIntents = [
 	'TV_power',
 	'TV_ok',
+	'AC_on',
+	'AC_off',
 	'receiver_powerOff',
 	'receiver_powerOn',
 	'receiver_tuner',

@@ -42,6 +42,30 @@
 					"slots": []
 				},
 				{
+					"name": "AC_on",
+					"samples": [
+						"AC on",
+						"air con on",
+						"turn on AC",
+						"turn the AC on",
+						"turn on air con",
+						"turn the air con on"
+					],
+					"slots": []
+				},
+				{
+					"name": "AC_off",
+					"samples": [
+						"AC off",
+						"air con off",
+						"turn off AC",
+						"turn the AC off",
+						"turn off air con",
+						"turn the air con off"
+					],
+					"slots": []
+				},
+				{
 					"name": "receiver_powerOn",
 					"samples": [
 						"receiver on",
